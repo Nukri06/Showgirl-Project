@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* color pallete
+light teal : #BED8CB
+teal : #67C0A4
+green : #668E6B
+dark green : #59734C
+RED : #BA2828
+light Orange :#FF884E
+Orange : #DC4935 */
+
+@font-face {
+    font-family: Main;
+    src: url(../fonts/LoveLight-Regular.ttf);
+}
+
+@font-face {
+    font-family: Text;
+    src: url(../fonts/ElmsSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Text2;
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Text3;
+    src: url(../fonts/Dorsa-Regular.ttf);
+}
