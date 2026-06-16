@@ -37,9 +37,34 @@
         <div class="HP1Part2">
           <a href="#"><i class="fa-solid fa-circle-user"></i>Log In</a>
           <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div id="myLinks">
+            <!-- დასამატებელია ლინკები -->
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Singles</a>
+            <a href="#">Merch</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
       </div>
     </header>
+
+    <!-- w3school script  -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
+
     <!-- ----------Section1-------- -->
     <section class="sect1">
       <img class="BG1" src="./Images/Main/TayHeart.png" alt="BGImg" />
@@ -180,7 +205,7 @@
 
     <!-- ----------Section5-------- -->
     <section class="sect5">
-      <img src="./Images/Main/The_Fate_of_Ophelia_MV_BTS_3.webp" alt="TFOO" />
+      <img src="./Images/Main/RED.png" alt="TFOO" />
       <div class="S5Part1">
         <h1>Command a Performance</h1>
         <p>
@@ -198,7 +223,10 @@
     </section>
     <!-- ----------Footer-------- -->
     <footer>
-      <img src="./Images/Main/c837a6_a74457a983b84c89a7357ba6e4b61e78~mv2.avif" alt="Rose">
+      <img
+        src="./Images/Main/c837a6_a74457a983b84c89a7357ba6e4b61e78~mv2.avif"
+        alt="Rose"
+      />
       <div class="footerPart1">
         <i class="fa-solid fa-star footer-star"></i>
         <div>
@@ -216,7 +244,7 @@
         </div>
       </div>
       <div class="footerPart2">
-        <h1>Taylor<span>Swift</span></h1>
+        <h1>Taylor <span>Swift</span></h1>
         <p>
           © 2026 by Nukri Munjishvili. Content Rights Are Reserved By Taylor
           Swift

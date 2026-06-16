@@ -1,6 +1,7 @@
 body{
     background-color: #123524; 
     overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -17,13 +18,18 @@ body{
 #8B3A17 (მუქი სპილენძისფერი): Hover ეფექტებისთვის. */
 /* ------------Header Styles---------------- */
 header{
-    background-color:#123524;
+    background-color:#123524cc;
+    box-shadow: 0 0 10px black;
     display: flex;
     padding: 20px 100px;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     z-index: 10;
+    
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .HPart1  a{
@@ -53,14 +59,14 @@ header{
 .HP1Part1 a , .HP1Part2 a{
     text-decoration: none;
     font-family: Text;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .active{
     text-decoration: underline !important;
 }
 
-.HP1Part1 a:hover {
+.HP1Part1 a:hover , #myLinks a:hover{
     text-decoration: underline;
     font-size: 24px;
     transition: 0.2s;
@@ -79,9 +85,46 @@ header{
     cursor: pointer;
 }
 
+.fa-circle-user:hover, .fa-basket-shopping:hover{
+    color: #DCA037;
+}
+
 .HP1Part2 a:hover{
     color: #DCA037;
 }
+.menu-checkbox, .burger-label {
+    display: none;
+}
+
+.HP1Part2 > a{
+    position: relative;
+    z-index: 20;
+}
+.icon{
+    display: none;
+}
+#myLinks{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #123524;
+    z-index: 15;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 80px;
+}
+
+#myLinks a{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
 
 /* ----------Section1------------ */
 .sect1{
@@ -99,7 +142,7 @@ header{
     position: absolute;
     left: 50%;
     top: 10px;
-    z-index: -10;
+    z-index: -8;
     animation: Animation4 linear ;
     animation-timeline: scroll(root);
 }
@@ -111,8 +154,8 @@ header{
 .S1Part1 h1{
     text-align: center;
     font-size: 200px;
-    color: #B85124; 
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    color: #e4632b; 
+    text-shadow: 0 0 5px rgba(218, 203, 31, 0.5);
     font-family: Text2;
     font-style: italic;
     animation: Animation3 4s ease forwards;
@@ -185,6 +228,7 @@ header{
 }
 
 .S2Part1 img{
+    object-fit: contain;
     height: 70vh ;
     filter: grayscale(1);
     border-radius: 10px;
@@ -241,6 +285,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+    overflow-x: clip;
 }
 
 .S3Container{
@@ -380,7 +425,7 @@ header{
 
 /* ------section4----------- */
 .sect4{
-    margin: 40vh 0;
+    margin: 20vh 0 50vh;
     padding: 0px 100px;
     height: 200vh;
 }
@@ -489,7 +534,6 @@ header{
 .S5Part1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 100px;
 
     padding: 20px 100px ;
@@ -500,16 +544,16 @@ header{
     font-family: Text2;
     font-style: italic;
 
-    color: #2fb489; 
+    color: #BA150E; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .S5Part1>p{
-    width: 50%;
+    width: 40%;
     font-size: 24px;
     font-family: text;
 
-    color: #2fb489; 
+    color: #BA150E; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -523,7 +567,7 @@ header{
     font-size: 24px;
     font-family: text;
     
-    color: #2fb489; 
+    color: #BA150E; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -536,9 +580,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    /* z-index: -10; */
-
-    /* მოძიებული */
+    z-index: -9;
     overflow: clip;
 }
 
@@ -580,8 +622,9 @@ footer{
 .footerPart2 h1{
     color: white;
     font-family: Text;
-    font-size: 300px;
+    font-size:240px;
     padding: 100px;
+    flex-wrap: wrap;
 }
 
 .footerPart2 span{
@@ -596,51 +639,242 @@ footer{
 footer>img{
     object-fit: contain;
     width: 50%;
-    height: 80%;
+    height: 100%;
     rotate: -75deg;
     position: absolute;
-    right: 400px;
+    right: -20%;
     top: 100px;
     z-index: -1;
 
     animation:Animation8 ease backwards;
-    animation-timeline: view(0);
+    animation-timeline: view();
 }
 
 /* ============ iPad (1024px) ============ */
 @media (max-width: 1024px) {
-  header,
-  .sect2,
-  .sect3,
-  .sect4,
-  .S5Part1,
-  .S5Part2,
-  footer {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+    header{
+        height: 10%;
+        align-items: center;    
+    }
+    .HPart1  a{
+        font-size: 24px;
+    }
+    .HP1Part1 , HP1Part2{
+        font-size: 16px;
+    }
+/* --------section1---------- */
 
-    .EventCard {
-    width: 100%;       /* 750px → სრული სიგანე */
-  }
+    .sect1{
+        height: 70vh;
+    }
+    .BG1{
+        top: 20%;
+        animation: Animation4iPad linear ;
+        animation-timeline: scroll(root);
+    }
+    .S1Part1 h1{
+        margin-top: 50px;
+        font-size: 150px;
+    }
 
-  .S3Part1 img {
-    width: 100%;       /* 465px → სრული სიგანე */
-    height: 350px;
-  }
+    #Sect1TxtStar{
+        left: 50%;
+        top: 50%;
+        font-size: 64px;
+    }
+/* ---------section2----- */
 
-  .S3Container {
-    flex-direction: column;  /* გვერდიგვერდი → ქვევით */
-  }
+    .sect2{
+    flex-direction: column;
+   }
+   .S2Part1 img{
+    object-fit: cover;
+    animation-timeline: view();
+   }
+/* --------------section3----- */
+   .sect3{
+    height: 70vh;
+   }
+   .S3Container{
+    gap: 100px;
+   }
+   .S3Part1 img{
+    height: 325px;
+    object-fit: cover;
+    object-position: 0% 20%;
 
-  .S3Part1 {
-    width: 100%;       /* 50% → სრული სიგანე */
-  }
+   }
+/* -------------------section4------- */
 
-  .S4Part2 {
-    grid-template-columns: repeat(3, 1fr);  /* 6 → 3 კოლონა */
-  }
+.sect4{
+    height: 150vh;
+    margin: 20vh 0vh;
 }
+
+/* ------section5---- */
+.S5Part1 ,.S5Part2{
+    flex-direction: column;
+    gap: 30px;
+}
+.S5Part1>p,.S5Part2 p{
+    color: white;
+}
+
+/* -----------------footer------ */
+
+.footer-star{
+    font-size: 64px;
+}
+
+footer>img{
+    rotate: -90deg;
+    top: -20%;
+    right: -50%;
+}
+
+
+/* ----------media ending--------------    */
+}
+
+@media (max-width: 900px){
+     .HPart1 a{
+        font-size: 24px;
+     }
+
+     .HP1Part1 a{
+        display: none;
+     }
+
+    .icon{
+        display: block;
+    }
+
+    .HPart1  a , .icon , .HP1Part2 a>i ,.HP1Part2 a {
+        font-size: 32px;
+    }
+    /* -----section1----- */
+    .sect1{
+        height: 100vh;
+    }
+    .S1Part1 h1{
+        font-size: 120px;
+    }
+    #Sect1TxtStar{
+        top: 40%;
+        left: 50%;
+        font-size: 36px;
+    }
+    /* -------section2----------- */
+     .S2Part2 h1{
+        font-size: 64px;
+     }
+     
+    /* ------------------section3-------- */
+     .sect3{
+        height: 170vh;
+     }
+
+     .S3Container{
+        flex-direction: column;
+     }
+     .S3Part1{
+        width: 100%;
+     }
+     .S3Part1 h1{
+        font-size: 64px;
+     }
+
+     .S3Part1 img{
+        height: 300px;
+        width: 500px;
+        left: 50%;
+     }
+     .EventCard{
+        width: 500px;
+     }
+     
+
+     .S3Container2  a>button{
+        height: 80px;
+        width: 500px;
+        font-size: 40px
+     }
+     /* -----------section4------- */
+    .sect4{
+        height: 250vh;
+    }
+
+     .S4Part2{
+         grid-template-areas: 
+        "one one one one one one"
+        "two two two three three three"
+        'four four four five five five '
+        'six six six seven seven seven '
+        'eight eight eight nine nine nine   '
+        'ten ten ten ten ten ten'
+    ;
+     }
+
+     /* -----------section5---------- */
+     .S5Part1 h1{
+        font-size: 44px;
+     }
+     .S5Part1 p{
+        width: 100%;
+     }
+
+     .S5Part2 a>button{
+        width: 500px;
+        font-size: 24px;
+     }
+     /* ------------footer---------- */
+
+     footer>img{
+        top: -10%;
+     }
+    .footer-star{
+        font-size: 44px;
+    }
+    .footerPart1{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .footerPart1>div{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .FPPart1 br{
+        display: none;
+    }
+
+    .footerPart2>h1{
+        font-size: 150px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .HP1Part2 a{
+        font-size: 0;
+    }
+    .HP1Part2 a i{
+        font-size: 24px;
+    }
+
+    .S4Part1{
+        flex-direction: column;
+    }
+    .S4Part1 h1{
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 500px){
+    
+}
+
+
 
 
 /* --------------Animations------------ */
@@ -667,7 +901,12 @@ footer>img{
 
 @keyframes Animation4 {
     0% { transform: translate(-50%, 0) scale(1)} 
-    100% { transform: translate(-50%, 500vh)  scale(1.5); }
+    100% { transform: translate(-50%, 500%)  scale(5); }
+}
+
+@keyframes Animation4iPad {
+    0% { transform: translate(-50%, 0) scale(1)} 
+    100% { transform: translate(-50%, 1000%)  scale(5); }
 }
 
 @keyframes Animation5 {
@@ -687,6 +926,6 @@ footer>img{
 }
 
 @keyframes Animation8 {
-    0%{transform: translateY(300vh);}
+    0%{transform: translateY(50%);}
     100%{ transform:translateY(-50vh);}
 }
