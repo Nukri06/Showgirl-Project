@@ -272,7 +272,7 @@ header{
 
 .S2Part2 > p{
     font-size: 24px;
-    color: white;
+    color: #5eb298;
     font-family: Text;
 }
 
@@ -321,7 +321,7 @@ header{
 }
 
 .S3Part1 p{
-    color: white;
+    color: #5eb298;
     font-family: Text;
     font-size: 24px;
 }
@@ -493,7 +493,7 @@ header{
     top: 10px;
     left: 20px;
     font-family: text;
-    color: #DCA037 ; 
+    color: #5eb298 ; 
     text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
@@ -861,6 +861,45 @@ footer>img{
     .HP1Part2 a i{
         font-size: 24px;
     }
+    /* section1 */
+    .S1Part1 h1{
+        font-size: 80px;
+    }
+    #Sect1TxtStar{
+        top: 55%;
+    }
+    .S1Part2{
+        flex-direction: column;
+        gap: 50px;
+    }
+    /* section2 */
+    .sect2{
+        padding: 50px 20px;
+    }
+
+    /* section3 */
+    .sect3{
+        padding: 50px 20px;
+    }
+    
+    .S3Part1 img{
+        justify-self: center;
+        width: 480px;
+    }
+
+    .EventCard{
+        width: 480px;
+    }
+
+    .S3Container2 a button {
+        height: 60px;
+        width: 460px;
+    }
+    /* -------section4-------- */
+    .sect4{
+        padding: 50px 20px;
+        height: 350vh;
+    }
 
     .S4Part1{
         flex-direction: column;
@@ -868,11 +907,44 @@ footer>img{
     .S4Part1 h1{
         font-size: 64px;
     }
-}
 
-@media (max-width: 500px){
+    .S4Part2{
+         grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
+        'six'
+        'seven'
+        'eight'
+        'nine'
+        'ten';
+        }
+
+    .img4 img{
+        object-position: 0% 90%;
+    }
+    .img5 img{
+        object-position: 0% 10%;
+    }
+    .img6 img{
+        object-position: 0% 30%;
+    }
+    .img8 img{
+        object-position: 0% 70%;
+    }
+    /* ----section5------ */
+    .S5Part2 a>button{
+        width: 300px;
+    }
+    /* ----footer------- */
     
 }
+
+
+
 
 
 

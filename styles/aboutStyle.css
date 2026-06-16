@@ -1,0 +1,496 @@
+body{
+    background-color: #123524; 
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/* Pallete ------
+
+#123524 (მუქი ზურმუხტისფერი): მთავარი.
+
+#B85124 (სპილენძისფერი/ტერაკოტა): მთავარი აქცენტებისთვის.
+
+#DCA037 (ოქროსფერი):ვარსკვლავებისთვის და მცირე სათაურებისთვის.
+
+#1E4E38 (ოდნავ ღია ზურმუხტისფერი): Event Card-ებისთვის.
+
+#8B3A17 (მუქი სპილენძისფერი): Hover ეფექტებისთვის. */
+/* ------------Header Styles---------------- */
+header{
+    background-color:#123524cc;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.HPart1  a{
+    color: white;
+    font-family: Text;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.HPart1 span{
+    font-family: Main;
+}
+
+.HPart2{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HP1Part1{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.HP1Part1 a , .HP1Part2 a{
+    text-decoration: none;
+    font-family: Text;
+    color: rgb(255, 255, 255);
+}
+
+.active{
+    text-decoration: underline !important;
+}
+
+.HP1Part1 a:hover , #myLinks a:hover{
+    text-decoration: underline;
+    font-size: 24px;
+    transition: 0.2s;
+    color: #DCA037; 
+}
+
+.HP1Part2{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.fa-circle-user, .fa-basket-shopping{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fa-circle-user:hover, .fa-basket-shopping:hover{
+    color: #DCA037;
+}
+
+.HP1Part2 a:hover{
+    color: #DCA037;
+}
+.menu-checkbox, .burger-label {
+    display: none;
+}
+
+.HP1Part2 > a{
+    position: relative;
+    z-index: 20;
+}
+.icon{
+    display: none;
+}
+#myLinks{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #123524;
+    z-index: 15;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 80px;
+}
+
+#myLinks a{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ------section1---------- */
+
+.sect1{
+    padding: 100px 20px 0px 0px;
+    height: 100vh;
+    display: flex;
+    gap: 50px;
+}
+.S1Part1 {
+    position: relative;
+}
+
+.S1Part1 img{
+    height: 850px;
+
+    animation:ComeIn ease 2s backwards;
+    rotate: 15deg;
+    
+}
+
+.S1Part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.S1Part2 h1{
+    font-size: 128px;
+    font-family: Text2;
+    font-style: italic;
+    color: #e4632b; 
+    text-shadow: 0 0 5px rgba(218, 203, 31, 0.5);
+    animation: Up forwards 1s ease;
+}
+
+
+.S1Part2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.S1Part2 div>p{
+    font-size: 24px;
+    font-family: text;
+    color: #e4632b;
+    animation: Up forwards 2s ease;
+}
+
+.sect1_star{
+    position: absolute;
+    top: 1px;
+    left: 10%;
+    font-size: 36px;
+    color: #DCA037;
+    animation: DancingStar 3s linear infinite ;
+}
+
+/* ----------section2------- */
+
+.sect2{
+    padding:100px 20px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sect2 h1{
+    font-size: 128px;
+    font-family: Text2;
+    font-style: italic;
+    color: #e4632b; 
+    text-shadow: 0 0 5px rgba(218, 174, 31, 0.5);
+}
+
+.sect2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sect2 div>img{
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    animation:ComeInFromTheOtherSide ease backwards;
+    animation-timeline: view();
+}
+
+.sect2 div>p{
+    font-size: 20px;
+    font-family: text;
+    color: #e4632b;
+
+}
+/* ------section3--------- */
+.sect3{
+    padding: 20px 100px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+
+.S3Part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.S3Part1>h1{
+    font-family: Text2;
+    font-size: 64px;
+    font-style: italic;
+    color: #e4632b;
+    text-shadow:0 0 4px #dc8a37;
+}
+
+.S3Part1>p{
+    font-family: text;
+    font-size: 24px;
+    color: #e4632b;
+}
+
+.S3Part2{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: #5eb298;
+    height: 520px;
+    width: 440px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    flex-wrap: wrap;
+    animation: Up2 forwards ease;
+    animation-timeline: view(0%);
+}
+.card h1, .card p{
+    color: white;
+}
+.card h1{
+    font-family: Text2;
+    font-style: italic;
+}
+.card p{
+    font-family: text;
+}
+
+.bitDown{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+/* -----footer----- */
+
+
+footer{
+    background-color: #be252a;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: -9;
+    overflow: clip;
+}
+
+.footerPart1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerPart1>div{
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+}
+
+.FPPart1 , .FPPart2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-family: text;
+    color: white;
+}
+.FPPart1 a, .FPPart2 a{
+    color: white;
+}
+.footer-star{
+    color: white;
+    font-size: 24px;
+    animation: DancingStar 3s linear infinite ;
+}
+
+.footerPart2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footerPart2 h1{
+    color: white;
+    font-family: Text;
+    font-size:240px;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+.footerPart2 span{
+    font-family: Main;
+}
+
+.footerPart2 p{
+    color: white;
+    font-family: text;
+}
+
+footer>img{
+    object-fit: contain;
+    width: 50%;
+    height: 100%;
+    rotate: -75deg;
+    position: absolute;
+    right: -20%;
+    top: 100px;
+    z-index: -1;
+
+    animation:RoseIn ease backwards;
+    animation-timeline: view();
+}
+
+/* ============ iPad (1024px) ============ */
+@media (max-width: 1024px) {
+    header{
+        height: 10%;
+        align-items: center;    
+    }
+    .HPart1  a{
+        font-size: 24px;
+    }
+    .HP1Part1 , HP1Part2{
+        font-size: 16px;
+    }
+/* --------section1---------- */
+
+  
+
+
+/* -----------------footer------ */
+
+.footer-star{
+    font-size: 64px;
+}
+
+footer>img{
+    rotate: -90deg;
+    top: -20%;
+    right: -50%;
+}
+
+
+/* ----------media ending--------------    */
+}
+
+@media (max-width: 900px){
+     .HPart1 a{
+        font-size: 24px;
+     }
+
+     .HP1Part1 a{
+        display: none;
+     }
+
+    .icon{
+        display: block;
+    }
+
+    .HPart1  a , .icon , .HP1Part2 a>i ,.HP1Part2 a {
+        font-size: 32px;
+    }
+    /* ----------------- */
+        
+     /* ------------footer---------- */
+
+     footer>img{
+        top: -10%;
+     }
+    .footer-star{
+        font-size: 44px;
+    }
+    .footerPart1{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .footerPart1>div{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .FPPart1 br{
+        display: none;
+    }
+
+    .footerPart2>h1{
+        font-size: 150px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .HP1Part2 a{
+        font-size: 0;
+    }
+    .HP1Part2 a i{
+        font-size: 24px;
+    }
+
+    
+}
+
+@media (max-width: 500px){
+    
+    
+}
+
+
+
+/* -------Animations-------------- */
+@keyframes ComeIn {
+    0%{transform: translateX(-300px);}
+    50%{ transform:translateX(0);}
+}
+@keyframes ComeInFromTheOtherSide{
+    0%{transform: translateX(300px);}
+    50%{ transform:translateX(0);}
+}
+
+@keyframes DancingStar {
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(180deg);}
+}
+
+@keyframes RoseIn {
+    0%{transform: translateY(50%);}
+    100%{ transform:translateY(-50vh);}
+}
+
+@keyframes Up {
+    0%{opacity: 0;}
+    50%{transform: translateY(10px); opacity: 0;}
+    100%{ transform:translateY(0); opacity: 100%;}
+}
+@keyframes Up2 {
+    0%{transform: translateY(100px); opacity: 0;;}
+    50%{ transform:translateY(0); opacity: 100%;}
+}
