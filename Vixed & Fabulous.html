@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vixed & Fabulous-The Life Of A Showgirl</title>
+    <link rel="stylesheet" href="./styles/MidnightMonarchStyle.css" />
+    <link rel="stylesheet" href="./styles/CommonStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="./Images/TS.png" />
+  </head>
+  <body>
+    <!-- ---------Header-------- -->
+    <header>
+      <div class="HPart1">
+        <a href="./index.html">Taylor<span>Swift</span></a>
+      </div>
+
+      <div class="HPart2">
+        <div class="HP1Part1">
+          <!-- დასამატებელია ლინკები -->
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./events.html" class="active">Events</a>
+          <a href="#">Music</a>
+          <a href="#">Merch</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="HP1Part2">
+          <a href="#"><i class="fa-solid fa-circle-user"></i>Log In</a>
+          <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div id="myLinks">
+            <!-- დასამატებელია ლინკები -->
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./events.html" class="active">Events</a>
+            <a href="#">Music</a>
+            <a href="#">Merch</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- w3school script  -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
+
+    <!-- ----------Section1-------- -->
+    <section class="sect1">
+      <div class="SPart1">
+        <h1>Vixed & Fabulous: The Brunch</h1>
+        <p>Thu, Jul 12 | San Francisco, CA, USA</p>
+        <p>
+          I’m an event description. Click here to open up the Event Editor and
+          change my text. I’m a great place for you to say a little more about
+          your upcoming event.
+        </p>
+        <a href="#"><button>Buy Tickets</button></a>
+      </div>
+
+      <img src="./Images/Events/Red Tour.webp" alt="" />
+
+      <div class="SPart2">
+        <h2>Time & Location</h2>
+        <p>Jul 12, 2035, 8:00 AM – 11:40 AM</p>
+        <p>San Francisco, CA, USA, San Francisco, CA, USA</p>
+      </div>
+
+      <div class="SPart3">
+        <h2>About the event</h2>
+        <p>
+          I’m an event description. Click here to open up the Event Editor and
+          change my text. Simply click me, Manage Event and start editing your
+          event. I’m a great place for you to say a little more about your
+          upcoming event.
+        </p>
+        <a href="#"><button>Buy Tickets</button></a>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20490.704803658!2d-122.49008278992397!3d37.76935274720514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sge!4v1781867949818!5m2!1sen!2sge"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="SPart4">
+        <h2>Share Event</h2>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- ----------Footer-------- -->
+    <footer>
+      <img
+        src="./Images/Main/c837a6_a74457a983b84c89a7357ba6e4b61e78~mv2.avif"
+        alt="Rose"
+      />
+      <div class="footerPart1">
+        <i class="fa-solid fa-star footer-star"></i>
+        <div>
+          <div class="FPPart1">
+            <p>500 Terry Francine St San <br />Francisco, CA 94158</p>
+            <p>123-456-7890</p>
+            <a href="#">info@mysite.com </a>
+          </div>
+          <div class="FPPart2">
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footerPart2">
+        <h1>Taylor <span>Swift</span></h1>
+        <p>
+          © 2026 by Nukri Munjishvili. Content Rights Are Reserved By Taylor
+          Swift
+        </p>
+      </div>
+    </footer>
+
+    <script src="./scrollReset.js"></script>
+  </body>
+</html>

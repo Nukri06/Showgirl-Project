@@ -282,9 +282,7 @@ header{
 }
 
 .bitDown{
-    position: absolute;
-    top: 20%;
-    left: 35%;
+    margin-top: 100px;
 }
 
 /* -----footer----- */

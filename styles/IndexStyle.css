@@ -544,7 +544,7 @@ header{
     font-family: Text2;
     font-style: italic;
 
-    color: #BA150E; 
+    color: white; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -553,7 +553,7 @@ header{
     font-size: 24px;
     font-family: text;
 
-    color: #BA150E; 
+    color: white; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -567,10 +567,15 @@ header{
     font-size: 24px;
     font-family: text;
     
-    color: #BA150E; 
+    color: white; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.S5Part2 a button{
+    justify-content: space-around;
+}
+
+/* --------Footer------- */
 footer{
     background-color: #be252a;
     min-height: 100vh;
@@ -665,10 +670,11 @@ footer>img{
 /* --------section1---------- */
 
     .sect1{
-        height: 70vh;
+        height: 100vh;
+        justify-content: space-between;
     }
     .BG1{
-        top: 20%;
+        top:20%;
         animation: Animation4iPad linear ;
         animation-timeline: scroll(root);
     }
@@ -682,6 +688,25 @@ footer>img{
         top: 50%;
         font-size: 64px;
     }
+
+    .S1Part2{
+        padding: 100px 0px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .S1Part2>p{
+        font-size: 32px;
+    }
+
+    .S1Part2>a>button{
+        height: 100px;
+        width: 500px;
+        align-items: center;
+        font-size: 32px;
+    }
+
+    
 /* ---------section2----- */
 
     .sect2{
@@ -720,6 +745,16 @@ footer>img{
     color: white;
 }
 
+.sect5 img{
+    object-position: 30% 0%;
+}
+
+.S5Part2 a button{
+    height: 100px;
+    width: 500px;
+    font-size: 32px;
+}
+
 /* -----------------footer------ */
 
 .footer-star{
@@ -733,10 +768,11 @@ footer>img{
 }
 
 
+
 /* ----------media ending--------------    */
 }
 
-@media (max-width: 900px){
+@media (max-width : 500px) {
      .HPart1 a{
         font-size: 24px;
      }
@@ -752,107 +788,10 @@ footer>img{
     .HPart1  a , .icon , .HP1Part2 a>i ,.HP1Part2 a {
         font-size: 32px;
     }
-    /* -----section1----- */
-    .sect1{
-        height: 100vh;
-    }
-    .S1Part1 h1{
-        font-size: 120px;
-    }
-    #Sect1TxtStar{
-        top: 40%;
-        left: 50%;
-        font-size: 36px;
-    }
-    /* -------section2----------- */
-     .S2Part2 h1{
-        font-size: 64px;
-     }
-     
-    /* ------------------section3-------- */
-     .sect3{
-        height: 170vh;
-     }
-
-     .S3Container{
-        flex-direction: column;
-     }
-     .S3Part1{
-        width: 100%;
-     }
-     .S3Part1 h1{
-        font-size: 64px;
-     }
-
-     .S3Part1 img{
-        height: 300px;
-        width: 500px;
-        left: 50%;
-     }
-     .EventCard{
-        width: 500px;
-     }
-     
-
-     .S3Container2  a>button{
-        height: 80px;
-        width: 500px;
-        font-size: 40px
-     }
-     /* -----------section4------- */
-    .sect4{
-        height: 250vh;
-    }
-
-     .S4Part2{
-         grid-template-areas: 
-        "one one one one one one"
-        "two two two three three three"
-        'four four four five five five '
-        'six six six seven seven seven '
-        'eight eight eight nine nine nine   '
-        'ten ten ten ten ten ten'
-    ;
-     }
-
-     /* -----------section5---------- */
-     .S5Part1 h1{
-        font-size: 44px;
-     }
-     .S5Part1 p{
-        width: 100%;
-     }
-
-     .S5Part2 a>button{
-        width: 500px;
-        font-size: 24px;
-     }
-     /* ------------footer---------- */
-
-     footer>img{
-        top: -10%;
-     }
-    .footer-star{
-        font-size: 44px;
-    }
-    .footerPart1{
-        gap: 50px;
-        flex-direction: column;
-    }
-
-    .footerPart1>div{
-        flex-direction: column;
-        gap: 50px;
-    }
-    .FPPart1 br{
-        display: none;
-    }
-
-    .footerPart2>h1{
-        font-size: 150px;
-    }
-
 }
+
+
+
 
 @media (max-width: 700px){
     .HP1Part2 a{
@@ -942,7 +881,6 @@ footer>img{
     /* ----footer------- */
     
 }
-
 
 
 
