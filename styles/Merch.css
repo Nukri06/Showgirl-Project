@@ -124,10 +124,191 @@ header{
     color: white;
     text-decoration: none;
 }
+/* -----------section1------ */
+.sect1{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.sect1>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+
+    animation: Up 1s forwards ease;
+}
+.sect1>a{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    text-decoration: none;
+}
+
+.shopAll{
+    height: 50px;
+    width: 150px;
+    background-color: #3195B5cc;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-size: 24px;
+    font-family: Text3;
+    letter-spacing: 1px;
+
+    animation: Up 2s forwards ease;
+}
+
+.shopAll:hover{
+        background-color: #3195B5;
+        transition: 0.3s;
+}
+
+.sect1>h1{
+    position: absolute;
+    bottom: 82%;
+    padding: 20px 100px;
+    background-color: #3195B5cc;
+    font-family: Text;
+    color: white;
+    
+    animation: Up 2s forwards ease;
+}
+
+/* --------section2------------ */
+
+.sect2,
+.sect3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+}
+
+.sect2>h1,
+.sect3>h1{
+    font-family: Text;
+    padding: 20px 0px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #F15F22;
+    text-shadow: 0 0 5px;
+}
+
+.S2Products,
+.S3Products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.S2ProductsCard{
+    margin:20px 0px;
+    height: 550px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    
+}
+
+.S2ProductsCard>div{
+    height: 350px;
+   
+} 
+
+.S2Products>div>h2{
+    position: absolute;
+}
+
+.S2ProductsCard Img{
+    object-fit: cover;
+    height: 350px;
+    width: 80%;
+    border: 5px solid #007A68;
+    background-color: #8DCFB1; 
+    cursor: pointer;
+}
+
+.deg5{
+    rotate: 5deg;
+}
+.deg-5{
+    rotate: -5deg;
+}
+
+.hide{
+    position: absolute;
+    object-position: top;
+    left: 0;
+    opacity: 0;
+}
+
+.S2ProductsCard img:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.S2ProductsCard h1{
+    font-family: text;
+    color: #F15F22;
+}
+
+.S2ProductsCard p{
+    font-size: 24px;
+    font-family: Text ;
+    color:#DCA037 ;
+}
 
 
 
+/* --------section4------ */
 
+.sect4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 100px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container>a>button{
+    width: 100%;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.container>a>button>img{
+    object-fit: contain;
+    height: 400px;
+}
+
+.container>a>button:hover{
+    rotate: -5deg;
+    transition: 0.3s;
+}
+
+.hrDiv{
+    margin: 32px;
+    height: 2px;
+    border-radius: 10px;
+    width: 85vw;
+    background-color: #8bc7b4;
+}
 /* --------Footer------- */
 footer{
     background-color: #be252a;
