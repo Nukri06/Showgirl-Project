@@ -127,109 +127,127 @@ header{
 
 /*---------- section1-------- */
 .sect1{
+    height: 210vh;
     display: flex;
     flex-direction: column;
 }
+
 .sect1>img{
     height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    animation: Up2 1s backwards ease;
+object-fit: cover;
+    animation: Up 1s ease-in;
 }
 
-.Container1{
-    padding: 20px 100px;
+.stream{
+    padding: 100px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.StreamP1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
 }
 
-.Container1>h1{
-    text-align: center;
-    font-size: 40px;
-    font-family: Text2;
-    font-style: italic;
-    color: #E4632B;
-    text-shadow: 0 0 5px; 
-    animation: ComeInFromTheOtherSide ease backwards;
-    animation-timeline:view(0%) ;
+.StreamP1>img{
+    height: 128px;
+    width: 100%;
+
+    animation:Up2 forwards ease;
+    animation-timeline: view();
+}
+.StreamP1>a{
+    background-color: #d04205;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    animation:Up2 forwards ease;
+    animation-timeline: view();
+
 }
 
-.card{
-    height: 50vh;
-    width: 100%;
-    border-radius: 20px;
-    padding: 30px;
+.StreamP1>a:hover{
+    background-color: #b14e24;
+}
+.StreamP1>a>img{
+    height: 24px;
+    width: 24px;
+   
+}
 
+.StreamP2{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
 
-    background-color: #5eb298;
-    box-shadow: -10px -10px 2px #8bc7b4 inset;
-    overflow-y: hidden;
+.StreamP2>h1{
+    padding: 20px;
+    font-size: 40px;
+    font-family: Text;
+    color: #E4632B;
+    text-shadow: 0 0 5px;
 
-    animation: ComeIn ease-in backwards;
+    animation:Up2 forwards ease;
     animation-timeline: view();
 }
 
-.card img{
-    height: 40vh;
-    width: 40vh;
+.hrDiv{
+    margin: 32px;
+    height: 2px;
+    border-radius: 10px;
+    width: 85vw;
+    background-color: #8bc7b4;
 }
 
-.Part1{
+.StreamButtons{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 
-    height: 100%;
-    width: 50%;
-    padding: 10px;
+    animation:Up2 forwards ease;
+    animation-timeline: view();
 }
 
-.P1Part1{
+.StreamButtons>a{
+    text-decoration: none;
+}
+.StreamButtons>a>button{
+    height: 60px;
+    width: 144px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.P1Part1 h1{
-    font-family: text;
+    justify-content: center;
+    align-items: center;
     color: white;
-
-}
-.P1Part1 h2,
-.P1Part2 h2{
-    font-family: text2;
-    font-style: italic;
-    color: white;
-}
-
-.P1Part2 p,
-.P1Part3 p{
+    background-color: #E4632B;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
     font-family: text;
-    color: #d04205;
 }
 
-.P1Part3 h2{
-    font-family: Text;
-    font-size: 30px;
-    color: #E4632B;
+.StreamButtons>a>button:hover{
+    background-color: #d04205;
+    text-decoration: underline;
+    transition: 0.3s;
 }
 
-.Part2 {
-    max-height: 40vh;   
-    width: 40vh;   
-    overflow-y: auto; 
-    border-radius: 10px;    
-    background-color: white; 
-    justify-self: left;
-}
 
-.Part2 iframe {
-    max-height: none !important; 
-}
+
+
 
 /* ----------sect2---------- */
 
@@ -237,6 +255,7 @@ header{
     padding: 100px ;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sect2 button{
@@ -248,17 +267,21 @@ header{
     height: 50px;
     border: 0;
     border-radius: 100PX;
-    font-family: Text2;
-    font-style: italic;
+    font-family: Text;
     color: white;
-    background-color: #d04205;
+    background-color: #E4632B;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     cursor: pointer;
     transition: 0.3s;
+
+    animation:Up2 forwards ease;
+    animation-timeline: view();
 }
 
 .sect2 a{
     text-decoration: none;
+    animation:Up2 forwards ease;
+    animation-timeline: view();
 }
 
 .sect2 button:hover{
@@ -270,6 +293,7 @@ header{
 .sect2>div{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -277,6 +301,9 @@ header{
     font-size: 40px;
     font-family: text;
     color: #E4632B;
+
+    animation:Up2 forwards ease;
+    animation-timeline: view();
 }
 .socials{
     display: flex;
@@ -294,7 +321,218 @@ header{
 }
 
 
+/* --------------section3---------- */
 
+
+.sect3{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    height: 90vh;
+}
+
+.sect3>h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: text;
+    color: #E4632B;
+    text-shadow: 0 0 5px ;
+
+    animation:Up2 forwards ease;
+    animation-timeline: view();
+}
+
+.S3Shop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.S3card{
+    height: 550px;
+    width: 450px;
+    border: 1px solid #8bc7b4;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.S3card>img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.S3card>a>button{
+    height: 50px;
+    width: 150px;
+    background-color: #E4632B;
+    border: 0;
+    border-radius: 100px;
+    color: white;
+    font-family: text;
+    cursor: pointer;
+}
+
+.S3card>a{
+    text-decoration: none;
+}
+.S3card>a>button:hover{
+    text-decoration: underline;
+    background-color: #d04205;
+    transition: 0.3s;
+}
+
+/* ----------Section4---------- */
+.sect4{
+    padding: 0x 50px ;
+    display: flex;
+    flex-direction: column;
+    background-color: #007A68;
+    border-radius: 20px;
+    align-items: center;
+}
+
+
+.S4Part1{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.S4Part1>h1{
+    font-family: Text;
+    color: #8bc7b4;
+}
+.S4Part1>p{
+    color: #8bc7b4;
+    font-family: text2;
+    font-style: italic;
+}
+
+.carousel{
+    display: flex;
+    gap: 20px;
+    flex: 0 0 20px;
+}
+
+.S4Part2{
+    display: flex;
+    
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0px;
+
+    animation: spin 5s infinite linear;
+}
+
+.S4Part2>img{
+    height: 270px;
+    width: 270px;
+    background-color: #8bc7b4;
+    border-radius: 20px;
+}
+
+.sect4>a>button{
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    border: 0;
+    background-color: #E4632B;
+    border-radius: 100px;
+    font-family: text;
+    color: white;
+    cursor: pointer;
+}
+
+.sect4>a>button:hover{
+    text-decoration: underline;
+    background-color: #d04205;
+    transition: 0.3s;
+}
+
+/* -----section5----- */
+.sect5{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect5>h1{
+    font-size: 40px;
+    font-family: Text;
+    color: #E4632B;
+    text-shadow: 0 0 5px;
+}
+
+/* -----galerry---- */
+.S5Part1{
+    width: 100% ;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    grid-template-areas: 
+    "one one one one one one"
+    "two two two three four five"
+    'two two two three four five'
+    'six seven eight nine nine nine'
+    'six seven eight nine nine nine'
+    'ten ten ten ten ten ten'
+    ;
+}
+
+.gallery{
+    position: relative;
+    object-fit: contain;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: blur(5px) grayscale(1);
+}
+
+.gallery img:hover{
+    filter: blur(0) grayscale(0);
+    transition: 0.2s;
+}
+
+.gallery h1{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: text;
+    color: #5eb298 ; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.img1{ grid-area: one; }
+.img1 img{ object-position: 0% 5% ; }
+.img2{ grid-area: two; }
+.img3{ grid-area: three ; }
+.img4{ grid-area: four; }
+.img5{ grid-area: five; }
+.img6{ grid-area: six; }
+.img7{ grid-area: seven; }
+.img7 img{ object-position: 40% 0%; }
+.img8{ grid-area: eight; }
+.img9{ grid-area: nine; }
+.img10{ grid-area: ten; }
+.img10 img{ object-position: 0% 40%; }
 /* --------Footer------- */
 footer{
     background-color: #be252a;
@@ -404,4 +642,10 @@ footer>img{
 @keyframes Up2 {
     0%{transform: translateY(100px); opacity: 0;;}
     50%{ transform:translateY(0); opacity: 100%;}
+}
+
+@keyframes spin {
+    0%{translate: 0;}
+    50%{translate: -50%;}
+    
 }
