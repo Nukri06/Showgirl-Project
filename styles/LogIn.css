@@ -219,6 +219,8 @@ section{
 
 section>img{
     position: absolute;
+    object-fit: cover;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: -11;
@@ -346,6 +348,139 @@ label{
     font-size: 24px;
 }
 
+
+@media (max-width: 1024px) {
+
+    section {
+        padding: 60px;
+        gap: 16px;
+    }
+
+    .LogInForm {
+        width: 420px;
+        padding: 40px;
+    }
+
+    .socials {
+        width: 420px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    section {
+        padding: 90px 20px 40px;
+        height: auto;
+        min-height: 100svh;
+        gap: 16px;
+    }
+
+    /* 50vh სიგანე მობაილზე არასანდოა — vw-ზე გადავდივართ */
+    .LogInForm {
+        width: 90vw;
+        max-width: 400px;
+        height: auto;
+        padding: 30px 25px;
+        gap: 14px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #username,
+    #email,
+    #password {
+        height: 36px;
+        padding: 8px 14px;
+    }
+
+    .LogInForm>div {
+        gap: 20px;
+    }
+
+    .LogInForm>div>button {
+        width: 45%;
+        height: 42px;
+        margin-top: 10px;
+    }
+
+    .socials {
+        width: 90vw;
+        max-width: 400px;
+        height: auto;
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .socials>div {
+        gap: 30px;
+    }
+
+    .socials h1 {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    section {
+        padding: 80px 15px 30px;
+        gap: 14px;
+    }
+
+    .LogInForm {
+        width: 100%;
+        padding: 25px 20px;
+        gap: 12px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    #username,
+    #email,
+    #password {
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .LogInForm>div>button {
+        width: 50%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .LogInForm>a {
+        font-size: 14px;
+    }
+
+    .socials {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .socials h1 {
+        font-size: 16px;
+    }
+
+    .socials>div {
+        gap: 20px;
+    }
+
+    .socials>div>a {
+        height: 32px;
+        width: 32px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+}
 
 
 /* -------Animations-------------- */

@@ -367,101 +367,249 @@ footer>img{
     animation-timeline: view();
 }
 
-/* ============ iPad (1024px) ============ */
 @media (max-width: 1024px) {
-    header{
-        height: 10%;
-        align-items: center;    
+ 
+    /* ---------- Section 1 ---------- */
+    .sect1 {
+        padding: 100px 40px 40px 40px;
+        gap: 30px;
     }
-    .HPart1  a{
+ 
+    .S1Part1 img {
+        height: 520px;
+        rotate: 12deg;
+        
+    }
+ 
+    .S1Part2 h1 {
+        font-size: 88px;
+    }
+ 
+    .S1Part2 div > p {
+        font-size: 20px;
+    }
+ 
+    /* ---------- Section 2 ---------- */
+    .sect2 {
+        padding: 80px 40px;
+        gap: 30px;
+    }
+ 
+    .sect2 h1 {
+        font-size: 88px;
+    }
+ 
+    .sect2 div>img {
+        height: 360px;
+    }
+ 
+    .sect2 div > p {
+        font-size: 18px;
+    }
+ 
+    /* ---------- Section 3 ---------- */
+    .sect3 {
+        padding: 60px 40px;
+        height: auto;
+        min-height: 100svh;
+    }
+ 
+    .S3Part1 > h1 {
+        font-size: 52px;
+    }
+ 
+    .S3Part1 > p {
+        font-size: 20px;
+    }
+ 
+    .S3Part2 {
+        gap: 20px;
+    }
+ 
+    .card {
+        width: 290px;
+        height: 480px;
+        padding: 30px 20px;
+    }
+
+    .card> h1{
         font-size: 24px;
     }
-    .HP1Part1 , HP1Part2{
+ 
+    .bitDown {
+        margin-top: 60px;
+    }
+}
+ 
+ 
+
+@media (max-width: 750px) {
+ 
+    /* ---------- Section 1 ---------- */
+    .sect1 {
+        height: auto;
+        height: 100vh;
+        flex-direction: column;
+        padding: 100px 20px 40px;
+        gap: 30px;
+    }
+ 
+    .S1Part1 img {
+        rotate: 8deg; 
+        
+    }
+ 
+    .S1Part2 h1 {
+        font-size: 72px;
+    }
+ 
+    .S1Part2 div > p {
+        font-size: 18px;
+    }
+ 
+    .sect1_star {
+        font-size: 28px;
+        left: 5%;
+    }
+ 
+    /* ---------- Section 2 ---------- */
+    .sect2 {
+        height: 100vh;
+        flex-direction: column;
+        padding: 80px 20px 40px;
+        gap: 0px;
+    }
+ 
+    .sect2 h1 {
+        font-size: 72px;
+    }
+ 
+    .sect2 div > img {
+        height: 320px;
+        width: 100%;
+        object-fit: cover;
+        margin: 20px 0px;
+    }
+ 
+    .sect2 div > p {
+        font-size: 18px;
+    }
+ 
+    /* ---------- Section 3 ---------- */
+    .sect3 {
+        height: auto;
+        min-height: 100svh;
+        padding: 60px 20px 40px;
+        gap: 30px;
+    }
+ 
+    .S3Part1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+ 
+    .S3Part1 > h1 {
+        font-size: 48px;
+    }
+ 
+    .S3Part1 > p {
+        font-size: 18px;
+    }
+ 
+   
+    .S3Part2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+ 
+    .card {
+        width: 100%;
+        height: auto;
+        min-height: 360px;
+        padding: 30px 20px;
+    }
+ 
+    .bitDown {
+        margin-top: 0;
+    }
+}
+ 
+ 
+
+@media (max-width: 500px) {
+ 
+    /* ---------- Section 1 ---------- */
+    .sect1 {
+        padding: 90px 15px 30px;
+        height: 60vh;
+        gap: 20px;
+    }
+ 
+    .S1Part1 img {
+        height: 240px;
+        rotate: 5deg;
+    }
+ 
+    .S1Part2 h1 {
+        font-size: 48px;
+    }
+ 
+    .S1Part2 div > p {
         font-size: 16px;
     }
-/* --------section1---------- */
-
-  
-
-
-/* -----------------footer------ */
-
-.footer-star{
-    font-size: 64px;
+ 
+    .sect1_star {
+        font-size: 22px;
+    }
+ 
+    /* ---------- Section 2 ---------- */
+    .sect2 {
+        padding: 80px 15px 30px;
+        gap: 20px;
+        justify-content: center;
+    }
+ 
+    .sect2 h1 {
+        font-size: 48px;
+    }
+ 
+    .sect2 div > img {
+        height: 240px;
+    }
+ 
+    .sect2 div > p {
+        font-size: 16px;
+    }
+ 
+    /* ---------- Section 3 ---------- */
+    .sect3 {
+        padding: 60px 15px 30px;
+        gap: 20px;
+    }
+ 
+    .S3Part1 > h1 {
+        font-size: 36px;
+    }
+ 
+    .S3Part1 > p {
+        font-size: 16px;
+    }
+ 
+    .card {
+        min-height: 300px;
+        padding: 25px 15px;
+    }
+ 
+    .card h1 {
+        font-size: 28px;
+    }
+ 
+    .card p {
+        font-size: 15px;
+    }
 }
-
-footer>img{
-    rotate: -90deg;
-    top: -20%;
-    right: -50%;
-}
-
-
-/* ----------media ending--------------    */
-}
-
-@media (max-width: 900px){
-     .HPart1 a{
-        font-size: 24px;
-     }
-
-     .HP1Part1 a{
-        display: none;
-     }
-
-    .icon{
-        display: block;
-    }
-
-    .HPart1  a , .icon , .HP1Part2 a>i ,.HP1Part2 a {
-        font-size: 32px;
-    }
-    /* ----------------- */
-        
-     /* ------------footer---------- */
-
-     footer>img{
-        top: -10%;
-     }
-    .footer-star{
-        font-size: 44px;
-    }
-    .footerPart1{
-        gap: 50px;
-        flex-direction: column;
-    }
-
-    .footerPart1>div{
-        flex-direction: column;
-        gap: 50px;
-    }
-    .FPPart1 br{
-        display: none;
-    }
-
-    .footerPart2>h1{
-        font-size: 150px;
-    }
-
-}
-
-@media (max-width: 700px){
-    .HP1Part2 a{
-        font-size: 0;
-    }
-    .HP1Part2 a i{
-        font-size: 24px;
-    }
-
-    
-}
-
-@media (max-width: 500px){
-    
-    
-}
-
-
 
 /* -------Animations-------------- */
 @keyframes ComeIn {

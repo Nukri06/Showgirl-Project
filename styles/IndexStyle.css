@@ -1143,31 +1143,7 @@ footer>img{
         font-size: 16px;
     }
 
-    /* ---------- Footer ---------- */
-    footer {
-        padding: 15px;
-    }
-
-    .footerPart1 > div {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .FPPart1,
-    .FPPart2 {
-        font-size: 16px;
-        gap: 12px;
-    }
-
-    .footerPart2 h1 {
-        font-size: 58px;
-        padding: 20px 5px;
-        word-break: break-word;
-    }
-
-    .footerPart2 p {
-        font-size: 13px;
-    }
+   
 }
 
 

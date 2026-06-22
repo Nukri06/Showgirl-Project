@@ -285,6 +285,143 @@ img{
     margin: 20px;
     color: white;
 }
+
+@media (max-width: 1024px) {
+
+    
+    .sect1 {
+        padding: 100px 60px 60px;
+        height: auto;
+        gap: 40px;
+    }
+
+    .SPart1,
+    .SPart2,
+    .SPart3,
+    .SPart4 {
+        padding: 0 30px;
+    }
+
+    .SPart1 h1,
+    .SPart2 h2,
+    .SPart3 h2,
+    .SPart4 h2 {
+        font-size: 44px;
+    }
+
+    .SPart1 p,
+    .SPart2 p,
+    .SPart3 p {
+        font-size: 18px;
+    }
+
+    img {
+        height: 380px;
+    }
+
+    .SPart1 a > Button,
+    .SPart3 a > Button {
+        width: 180px;
+        height: 46px;
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+
+    /* ---------- Section 1 ---------- */
+    .sect1 {
+        padding: 80px 20px 40px;
+        gap: 35px;
+    }
+
+    .SPart1,
+    .SPart2,
+    .SPart3,
+    .SPart4 {
+        padding: 0 10px;
+        gap: 12px;
+    }
+
+    .SPart1 h1,
+    .SPart2 h2,
+    .SPart3 h2,
+    .SPart4 h2 {
+        font-size: 34px;
+    }
+
+    .SPart1 p,
+    .SPart2 p,
+    .SPart3 p {
+        font-size: 16px;
+    }
+
+    img {
+        height: 260px;
+        width: 100%;
+    }
+
+    .SPart1 a > Button,
+    .SPart3 a > Button {
+        width: 160px;
+        height: 44px;
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* ---------- Section 1 ---------- */
+    .sect1 {
+        padding: 80px 15px 30px;
+        gap: 25px;
+    }
+
+    .SPart1,
+    .SPart2,
+    .SPart3,
+    .SPart4 {
+        padding: 0 5px;
+        gap: 10px;
+    }
+
+    .SPart1 h1,
+    .SPart2 h2,
+    .SPart3 h2,
+    .SPart4 h2 {
+        font-size: 26px;
+    }
+
+    .SPart1 p,
+    .SPart2 p,
+    .SPart3 p {
+        font-size: 15px;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    .SPart1 a > Button,
+    .SPart3 a > Button {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .fa-brands {
+        font-size: 18px;
+        margin: 8px;
+    }
+}
     
 
 

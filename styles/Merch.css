@@ -133,7 +133,7 @@ header{
 }
 
 .sect1>img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     margin-top: 20px;
@@ -309,6 +309,194 @@ header{
     width: 85vw;
     background-color: #8bc7b4;
 }
+
+
+@media (max-width: 1024px) {
+    /* ---------- Section 1 ---------- */
+    .sect1 > h1 {
+        font-size: 22px;
+        padding: 15px 40px;
+    }
+    /* ---------- Section 2 & 3 ---------- */
+    .sect2,
+    .sect3 {
+        padding: 20px 40px;
+    }
+
+    .sect2 > h1,
+    .sect3 > h1 {
+        font-size: 30px;
+    }
+
+    .S2ProductsCard {
+        width: 300px;
+    }
+
+    .S2ProductsCard Img {
+        width: 85%;
+    }
+
+    /* ---------- Section 4 ---------- */
+    .sect4 {
+        padding: 20px 40px;
+        gap: 30px;
+    }
+
+    .container > a > button > img {
+        height: 320px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    /* ---------- Section 1 ---------- */
+    .sect1 > h1 {
+        font-size: 18px;
+        padding: 12px 20px;
+        bottom: 50%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sect1 > a {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .shopAll {
+        width: 140px;
+        height: 46px;
+        font-size: 20px;
+    }
+
+    /* ---------- Section 2 da 3 ---------- */
+    .sect2,
+    .sect3 {
+        padding: 20px;
+    }
+
+    .sect2 > h1,
+    .sect3 > h1 {
+        font-size: 26px;
+    }
+
+    .S2Products,
+    .S3Products {
+        gap: 30px;
+    }
+
+    .S2ProductsCard {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        min-height: 480px;
+    }
+
+    .S2ProductsCard > div {
+        height: 300px;
+    }
+
+    .S2ProductsCard Img {
+        height: 300px;
+        width: 80%;
+    }
+
+    .S2ProductsCard h1 {
+        font-size: 20px;
+    }
+
+    .S2ProductsCard p {
+        font-size: 20px;
+    }
+
+    /* ---------- Section 4 ---------- */
+    .sect4 {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .container>a >button>img {
+        height: 240px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    /* ---------- Section 1 ---------- */
+    .sect1 > h1 {
+        font-size: 15px;
+        padding: 10px 15px;
+        bottom: 50%;
+    }
+
+    .shopAll {
+        width: 130px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    /* ---------- Section 2 & 3 ---------- */
+    .sect2,
+    .sect3 {
+        padding: 15px;
+        
+    }
+
+    .sect2 > h1,
+    .sect3 > h1 {
+        font-size: 22px;
+    }
+
+    .S2ProductsCard {
+        width: 100%;
+        height: 420px;
+        
+
+    }
+
+    .S2ProductsCard > div {
+        height: 200px;
+    }
+
+    .S2ProductsCard Img {
+        height: 260px;
+        width: 85%;
+    }
+
+    .S2ProductsCard h1 {
+        font-size: 24px;
+    }
+
+    .S2ProductsCard p {
+        font-size: 18px;
+    }
+
+    /* ---------- Section 4 ---------- */
+    .sect4 {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .container > a > button > img {
+        height: 180px;
+    }
+
+    .hrDiv {
+        width: 92vw;
+        margin: 16px 0;
+    }
+}
+
 /* --------Footer------- */
 footer{
     background-color: #be252a;
