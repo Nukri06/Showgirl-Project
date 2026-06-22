@@ -32,3 +32,109 @@ Orange : #DC4935 */
     font-family: Text3;
     src: url(../fonts/Fontspring-DEMO-gazzetta-regular.otf);
 }
+
+@media (max-width: 1024px) {
+    header{
+        align-items: center;    
+    }
+    .HPart1 a{
+        font-size: 24px;
+     }
+
+     .HP1Part1 a{
+        display: none;
+     }
+
+    .icon{
+        display: block;
+    }
+
+    .HPart1  a , .icon , .HP1Part2 a>i ,.HP1Part2 a {
+        font-size: 32px;
+    }
+/* ---------------footer */
+
+    .footerPart1{
+        gap: 20px;
+    }
+    .footer-star{
+    font-size: 64px;
+    }
+    .FPPart1,.FPPart2{
+        font-size: 30px;
+    }
+    footer>img{
+        right: -50%;
+    }
+
+    .footerPart2 h1{
+        font-size: 180px;
+    }
+
+
+
+
+
+}
+
+@media (max-width:750px) {
+     /* ---------- Header ---------- */
+    header {
+        padding: 15px 20px;
+    }
+
+    .HPart1 a {
+        font-size: 24px;
+    }
+    .HP1Part1 {
+        display: none;
+    }
+    .icon {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .HPart2 {
+        gap: 15px;
+        align-items: center;
+    }
+
+    footer {
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .footerPart1 {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footerPart1 > div {
+        gap: 40px;
+    }
+
+    .footerPart2 h1 {
+        font-size: 100px;
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width:500px) {
+
+    header {
+        padding: 12px 15px;
+    }
+
+    .HPart1 a {
+        font-size: 20px;
+    }
+
+    .fa-circle-user,
+    .fa-basket-shopping {
+        font-size: 20px;
+    }
+
+}

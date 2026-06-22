@@ -655,236 +655,520 @@ footer>img{
     animation-timeline: view();
 }
 
-/* ============ iPad (1024px) ============ */
-@media (max-width: 1024px) {
-    header{
-        height: 10%;
-        align-items: center;    
+/* ============ iPad 1024px ============ */
+@media (max-width:1024px) {
+    .sect1,.sect2,.sect3,.sect4,.sect5{
+        padding: 20px;
     }
-    .HPart1  a{
-        font-size: 24px;
-    }
-    .HP1Part1 , HP1Part2{
-        font-size: 16px;
-    }
-/* --------section1---------- */
 
     .sect1{
-        height: 100vh;
-        justify-content: space-between;
+        gap: 50px;
     }
+
+    .S1Part1>h1{
+        margin-top: 10px;
+    }
+
     .BG1{
-        top:20%;
-        animation: Animation4iPad linear ;
+        top: 20%;
+        right: 40%;
+        height: 80vh;
+        width: 200vh;
+        animation: Animation4iPad  linear;
         animation-timeline: scroll(root);
     }
-    .S1Part1 h1{
-        margin-top: 50px;
-        font-size: 150px;
-    }
 
     #Sect1TxtStar{
-        left: 50%;
-        top: 50%;
-        font-size: 64px;
+        top: 25%;
     }
 
     .S1Part2{
-        padding: 100px 0px;
         flex-direction: column;
-        gap: 50px;
-    }
-    
-    .S1Part2>p{
-        font-size: 32px;
+        align-items: flex-start;
+        gap: 20px;
     }
 
-    .S1Part2>a>button{
-        height: 100px;
-        width: 500px;
+    .S1Part2 p{
+        font-size: 24px;
+    }
+
+    .S1Part2 button{
+        height: 80px;
         align-items: center;
-        font-size: 32px;
-    }
-
-    
-/* ---------section2----- */
-
-    .sect2{
-    flex-direction: column;
-   }
-   .S2Part1 img{
-    object-fit: cover;
-    animation-timeline: view();
-   }
-/* --------------section3----- */
-   .sect3{
-    height: 70vh;
-   }
-   .S3Container{
-    gap: 100px;
-   }
-   .S3Part1 img{
-    height: 325px;
-    object-fit: cover;
-    object-position: 0% 20%;
-
-   }
-/* -------------------section4------- */
-
-.sect4{
-    height: 150vh;
-    margin: 20vh 0vh;
-}
-
-/* ------section5---- */
-.S5Part1 ,.S5Part2{
-    flex-direction: column;
-    gap: 30px;
-}
-.S5Part1>p,.S5Part2 p{
-    color: white;
-}
-
-.sect5 img{
-    object-position: 30% 0%;
-}
-
-.S5Part2 a button{
-    height: 100px;
-    width: 500px;
-    font-size: 32px;
-}
-
-/* -----------------footer------ */
-
-.footer-star{
-    font-size: 64px;
-}
-
-footer>img{
-    rotate: -90deg;
-    top: -20%;
-    right: -50%;
-}
-
-
-
-/* ----------media ending--------------    */
-}
-
-@media (max-width : 500px) {
-     .HPart1 a{
-        font-size: 24px;
-     }
-
-     .HP1Part1 a{
-        display: none;
-     }
-
-    .icon{
-        display: block;
-    }
-
-    .HPart1  a , .icon , .HP1Part2 a>i ,.HP1Part2 a {
-        font-size: 32px;
-    }
-}
-
-
-
-
-@media (max-width: 700px){
-    .HP1Part2 a{
-        font-size: 0;
-    }
-    .HP1Part2 a i{
+        width: 400px;
         font-size: 24px;
     }
-    /* section1 */
-    .S1Part1 h1{
-        font-size: 80px;
-    }
-    #Sect1TxtStar{
-        top: 55%;
-    }
-    .S1Part2{
-        flex-direction: column;
-        gap: 50px;
-    }
-    /* section2 */
+
+
     .sect2{
-        padding: 50px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    /* section3 */
     .sect3{
-        padding: 50px 20px;
+        height: auto;
     }
-    
+
+    .S3Container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .S3Part1{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     .S3Part1 img{
-        justify-self: center;
-        width: 480px;
+        width: 80%;
+        object-fit: cover;
+        object-position: 20% 0%;
     }
 
-    .EventCard{
-        width: 480px;
+    .EventCard div>a{
+        font-size: 40px;
     }
-
-    .S3Container2 a button {
+    .EventCard>a>button{
         height: 60px;
-        width: 460px;
+        width: 300px;
     }
-    /* -------section4-------- */
+
+    .S3Container2{
+        height: 300px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .S3Container2 a>button, .S5Part2 a>button{
+        height: 100px;
+        width: 400px;
+        font-size: 24px;
+    } 
+    
     .sect4{
-        padding: 50px 20px;
-        height: 350vh;
+        height: 110vh;
     }
 
     .S4Part1{
         flex-direction: column;
+        align-items: start;
     }
-    .S4Part1 h1{
+    
+    .sect5 img{
+        right: 0;
+        object-position: 30%;
+    }
+    .S5Part1 , .S5Part2{
+        flex-direction: column;
+    }
+}
+/* ================end========== */
+
+/* ===================750px================ */
+@media (max-width: 750px) {
+
+
+    /* ---------- Section1 ---------- */
+    .sect1 {
+        height: auto;
+        min-height: 100vh;
+        gap: 50px;
+        padding: 100px 20px 50px;
+        justify-content: space-around;
+    }
+
+    .S1Part1 h1 {
+        font-size: 72px;
+    }
+
+    #Sect1TxtStar {
+        left: 50%;
+        top: 50%;
+        font-size: 36px;
+    }
+
+    .S1Part2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .S1Part2 p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .S1Part2 button {
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 18px;
+    }
+
+    /* ---------- Section 2 ---------- */
+    .sect2 {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .S2Part1 img {
+        height: 45vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% 10%;
+    }
+
+    .S2Part2 > h1 {
+        font-size: 56px;
+    }
+
+    .S2Part2 > p {
+        font-size: 18px;
+    }
+
+    /* ---------- Section 3 ---------- */
+    .sect3 {
+        padding: 20px;
+        height: auto;
+    }
+
+    .S3Container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 30px;
+    }
+
+    .S3Part1 {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .S3Part1 img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        object-position: 0% 15%;
+    }
+
+    .S3Part1 h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .S3Part1 p {
+        font-size: 18px;
+    }
+
+    .S3Part2 {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .EventCard {
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .EventCard div > a {
+        font-size: 22px;
+    }
+
+    .EventCard div > p {
+        font-size: 15px;
+    }
+
+    .EventCard > a > button {
+        width: 180px;
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .S3Container2 {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .S3Container2 a > button,
+    .S5Part2 a > button {
+        width: 260px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+    /* ---------- Section 4 ---------- */
+    .sect4 {
+        margin: 200px 0px 0px 0px;
+        padding: 0 20px;
+        height: auto;
+    }
+
+    .S4Part1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0 0 40px;
+    }
+
+    .S4Part1 h1 {
         font-size: 64px;
     }
 
-    .S4Part2{
-         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
-        'one'
-        'two'
-        'three'
-        'four'
-        'five'
-        'six'
-        'seven'
-        'eight'
-        'nine'
-        'ten';
-        }
+    .S4Part1 p {
+        font-size: 20px;
+    }
 
+    
+    .S4Part2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        grid-template-areas:
+            "one one"
+            "two two"
+            "two two"
+            "three four"
+            "five six"
+            "seven eight"
+            "nine nine"
+            "nine nine"
+            "ten ten";
+    }
+
+    .img3 img {
+        object-position: 0 40%;
+    }
     .img4 img{
-        object-position: 0% 90%;
+        object-position: 0 80%;
     }
     .img5 img{
         object-position: 0% 10%;
     }
     .img6 img{
-        object-position: 0% 30%;
+        object-position: 0 30%;
     }
-    .img8 img{
-        object-position: 0% 70%;
+
+    /* ---------- Section 5 ---------- */
+    .sect5 {
+        min-height: 100vh;
+        height: auto;
     }
-    /* ----section5------ */
-    .S5Part2 a>button{
-        width: 300px;
+
+    .sect5 img {
+        object-position: 30% ;
     }
-    /* ----footer------- */
+
+    .S5Part1 {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .S5Part1 > h1 {
+        font-size: 52px;
+    }
+
+    .S5Part1 > p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .S5Part2 {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .S5Part2 p {
+        font-size: 18px;
+    }
+
     
 }
 
 
+/* ===============500PX--------- */
+@media (max-width: 500px) {
 
+    /* ---------- Section 1 ---------- */
+    .sect1 {
+        gap: 35px;
+        padding: 90px 15px 40px;
+    }
 
+    .S1Part1 h1 {
+        font-size: 48px;
+    }
+
+    #Sect1TxtStar {
+        font-size: 28px;
+        top: 130px;
+        right: 8px;
+    }
+
+    .S1Part2 p {
+        font-size: 16px;
+    }
+
+    .S1Part2 button {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .BG1{
+        object-fit: cover;
+    }
+
+    /* ---------- Section 2 ---------- */
+    .sect2 {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .S2Part1 img {
+        height: 40vh;
+    }
+
+    .S2Part2 > h1 {
+        font-size: 40px;
+    }
+
+    .S2Part2 > p {
+        font-size: 16px;
+    }
+
+    .S2Part1 p {
+        font-size: 14px;
+        gap: 15px;
+    }
+
+    /* ---------- Section 3 ---------- */
+    .sect3 {
+        padding: 15px;
+    }
+
+    .S3Part1 img {
+        height: 240px;
+    }
+
+    .S3Part1 h1 {
+        font-size: 36px;
+    }
+
+    .S3Part1 p {
+        font-size: 16px;
+    }
+
+    .EventCard div> a {
+        font-size: 18px;
+    }
+
+    .EventCard div>p {
+        font-size: 13px;
+    }
+
+    .EventCard > a>button {
+        width: 150px;
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .S3Container2 a> button,
+    .S5Part2 a >button {
+        width: 220px;
+        height: 56px;
+        font-size: 16px;
+    }
+
+    /* ---------- Section 4 ---------- */
+    .sect4 {
+        margin: 200px 0px 0px 0px;
+        padding: 0 15px;
+    }
+
+    .S4Part1 h1 {
+        font-size: 44px;
+    }
+
+    .S4Part1 p {
+        font-size: 16px;
+    }
+
+    .S4Part2 {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 180px;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight"
+            "nine"
+            "ten";
+    }
+
+    /* ---------- Section 5 ---------- */
+    .sect5 img{
+        object-position: 40%  0;
+    }
+    .S5Part1 {
+        padding: 15px;
+    }
+
+    .S5Part1 > h1 {
+        font-size: 36px;
+    }
+
+    .S5Part1 > p {
+        font-size: 16px;
+    }
+
+    .S5Part2 {
+        padding: 15px;
+    }
+
+    .S5Part2 p {
+        font-size: 16px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+        padding: 15px;
+    }
+
+    .footerPart1 > div {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .FPPart1,
+    .FPPart2 {
+        font-size: 16px;
+        gap: 12px;
+    }
+
+    .footerPart2 h1 {
+        font-size: 58px;
+        padding: 20px 5px;
+        word-break: break-word;
+    }
+
+    .footerPart2 p {
+        font-size: 13px;
+    }
+}
 
 
 /* --------------Animations------------ */
